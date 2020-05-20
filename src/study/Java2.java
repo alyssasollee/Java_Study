@@ -32,7 +32,7 @@ public class Java2 {
 		case 8 : season="여름"; break;
 		case 9 : 
 		case 10 : 
-		case 11: season="가을"; break;
+		case 11 : season="가을"; break;
 		default : season="없는 계절";
 		}
 		
@@ -40,14 +40,56 @@ public class Java2 {
 	
 		int sum = 0;
 		for(int i=1;i<=10;i++) {
-			sum += i;
+			if(i%2==0) {
+				sum += i;
+			}
+		}
+		System.out.printf("1부터 10까지 짝수의 합은 %d입니다.%n", sum);
+		
+		for(int i=2;i<=9;i++) {
+			for(int j=1;j<=9;j++) {
+				System.out.printf("%d * %d = %d%n", i,j,i*j);
+			}
 		}
 		
 		
+		/* 증가 조건 출력 루트반복
+		 * i = 2, j = 1 => 2 * 1 = 2
+		 *      , j = 2 => 2 * 2 = 4
+		 *      ...
+		 *      , j = 9 => 2 * 9 = 18
+		 * i = 3, j = 1 => 3 * 1 = 3
+		 * ...
+		 * i = 9, j     
+		 * 
+		 * 
+		 * 
+		 * 
+		 */
+		//*잘 안씀. while 이렇게 밖에 줄줄..
+		int i = 1;
+		sum = 0;
+		while(i<=10) {
+			sum += i;
+			i++;
+		
+		}
+		
+		System.out.printf("1부터 10까지 합은 %d입니다.%n", sum);
+		
+		i = 2;
+		//int j = 1;여기 있으면 안댐.
+		while(i<=9) {
+			int j = 1;// 66행에 있으면 중괄호 밖에 있어서 j값이 10으로 끝나서 2단까지밖에 안됌.
+			while(j<=9) {
+				System.out.printf("%d*%d=%d%n",i,j,i*j);
+				j++;
+			}
+			i++;
+		}
 		
 		
-		
-		
+			
 		
 		
 		
