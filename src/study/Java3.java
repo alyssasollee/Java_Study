@@ -71,12 +71,54 @@ public class Java3 {
 			 System.out.println(array[i]);
 		 }
 		 
+		 
+		 
+		 
+		 
+		 
+		 
 		 for(int value : array) {
-		 System.out.println(value);
+			 System.out.println(value);
 		 }
 		 
-				
+		 
+		 
+		 
+		 int[] test = new int[3];
+		 
+		 test[0] = 1000;
+		 test[1] = 2000;
+		 test[2] = 3000;
+		 
+		 for(int i=0; i<test.length;i++) {
+		 System.out.print(test[i]+"\t");
+		 }
+		 
+		 System.out.println(); //대행
+		 
+		 
+		 for(int v : test) {
+			 System.out.println(v);
+		 }
+		 
+		 //일차형배열까지만 해보자~ 이차형배열은 나중에,,,, 지겨워지면,,? 언젠가,,? 
+		 
+		 String[] subject = new String[3];
+		 
+		 subject[0] = "국어";
+		 subject[1] = "영어";
+		 subject[2] = "수학";
+		 
+		 for(int i=0; i<subject.length;i++) {
+		 	 System.out.println(subject[i]);
+		 }
 		
+		 for(String b : subject) {
+			 System.out.println(b);
+		 
+		 
+		 }
+	
 		
 		
 		
