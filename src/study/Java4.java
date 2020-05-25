@@ -66,7 +66,7 @@ public class Java4 {
 		Java4 j = new Java4();
 		ArrayList<Customer> list = j.list();
 		
-		for(Customer cust : list) {
+		for(Customer cust : list) { //enhanced for loop¹® ÀÌ¾ß!! 
 			System.out.println(cust.name);
 		}
 		
